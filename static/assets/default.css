@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'jua';
+  src: url('./BMJUA_ttf.ttf');
+  font-weight: 700;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+  overflow-y: scroll;
+  text-underline-position: under;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:focus,
+a:hover,
+a.icon-container:focus .icon-label,
+a.icon-container:hover .icon-label {
+  text-decoration: underline;
+}
+a:active,
+a.icon-container:active .icon-label {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+button, input[type=submit] {
+  border-radius: 10em;
+  border: 1px solid #693b33;
+  background-color: #fed87d;
+  color: #401800;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: 2;
+  font-weight: bold;
+  min-width: 88px;
+  min-height: 44px;
+}
+button:focus,
+button:hover,
+input[type=submit]:focus,
+input[type=submit]:hover {
+  box-shadow: 0 0 0px 2px #693b33 inset;
+}
+button:active,
+input[type=submit]:active {
+  background-color: #401800;
+  border-color: #401800;
+  box-shadow: 0 0 0px 2px #401800 inset;
+  color: #fff;
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  fill: currentColor;
+  margin-right: 0.25em;
+  width: 1em;
+  height: 1em;
+}
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 40em;
+  min-height: 100vh;
+}
+.header {
+  background-color: #FFFAE7;
+  color: #401800;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  z-index: 1;
+}
+.main {
+  background-color: #fff;
+  flex-grow: 1;
+  min-height: 30em;
+}
+.footer {
+  background-image: url('./footer.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #FFFAE7;
+  color: #401800;
+  font-size: 0.75em;
+  padding: 4.5em 1.5rem;
+}
+.site-title {
+  font-family: 'jua', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+.go-back,
+.go-to-auth {
+  font-size: 0.875em;
+  position: absolute;
+  margin: 0;
+  top: 33%;
+}
+.go-back {
+  left: 1rem;
+}
+.go-to-auth {
+  right: 1rem;
+}
+.auth-item {
+  margin: 0;
+}
+.site-info-list {
+  padding: 0;
+  margin: 0;
+}
+.site-info-item {
+  display: block;
+}
+.content {
+  width: 100%;
+}
+.go-to-auth {
+  display: flex;
+}
+.greeting:after {
+  content: ' ';
+  white-space: pre;
+}
